@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   </head>
@@ -55,22 +56,12 @@
         <img src="/images/illustration-working.svg" alt="" />
       </div>
       <div class="url-container">
-        <input placeholder="Shorten a link here..." type="text" />
-        <button class="btn btn-square">Shorten it!</button>
+        <input id="urlInput" placeholder="Shorten a link here..." type="text" />
+        <button id="shortenBtn" class="btn btn-square">Shorten it!</button>
       </div>
 
       <section>
-        <div id="card-container">
-          <div class="link-card">
-            <div>
-              <span>http://127.0.0.1:5500/index.html</span>
-            </div>
-            <div>
-              <span>http://index.html</span>
-              <button class="btn btn-square btn-small">Copy</button>
-            </div>
-          </div>
-        </div>
+        <div id="card-container"></div>
       </section>
 
       <section class="statistics">
