@@ -20,7 +20,7 @@ cardContainerEl.addEventListener("click", (e) => {
     btn.textContent = "Copy";
   });
   const text = e.target.previousElementSibling.textContent;
-  console.log("text: ", text);
+
   copyToClipboard(text);
   const copyBtn = e.target;
 
