@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![screenshot](./screenshot.png)
 
 ### Links
 
@@ -47,12 +47,10 @@ Users should be able to:
 ### Continued development
 
 - View the optimal layout for the site depending on their device's screen size
-- Receive an error message when the `form` is submitted if:
-  - The `input` field is empty
 
 ### Useful resources
 
-- [ShortCode](https://shrtco.de/) - This helped me to for shortning of URLs.
+- [ShortCode](https://shrtco.de/) - This helped me to shorten of URLs.
 
 ## Author
 

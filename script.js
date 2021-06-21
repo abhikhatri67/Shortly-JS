@@ -4,7 +4,14 @@ const btnEl = document.getElementById("shortenBtn");
 
 btnEl.addEventListener("click", async () => {
   const url = inputEl.value;
-  if (!url) return;
+  const warnTextEl = document.querySelector('.warning-text');
+  if (!url) {
+    warnTextEl.classList.add('active');
+    inputEl.classList.add('active');
+    return;
+  }
+  warnTextEl.classList.remove('active');
+  inputEl.classList.remove('active');
   btnEl.textContent = "Loading...";
   const response = await shortenUrl(url);
   saveDataInLS(url, response.result.full_short_link);
